@@ -5,6 +5,13 @@
   "author": "Akihiko Tatsukami <akihiko@bushidoproj.com>",
   "repository": "https://github.com/bushidoproject/hashconnect",
   "license": "MIT",
+  "keywords": [
+    "hashgraph",
+    "hedera",
+    "wallet",
+    "crypto",
+    "nuxt"
+  ],
   "type": "module",
   "exports": {
     ".": {
