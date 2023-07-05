@@ -5,7 +5,7 @@ import { HashConnectTypes, IHashConnect, HashConnectConnectionState } from "./ty
 import { HashConnectProvider } from "./provider/provider";
 import { HashConnectSigner } from "./provider/signer";
 
-global.Buffer = global.Buffer || require('buffer').Buffer;
+// global.Buffer = global.Buffer || require('buffer').Buffer;
 
 /**
  * Main interface with hashpack
