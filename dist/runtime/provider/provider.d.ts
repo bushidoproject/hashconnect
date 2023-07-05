@@ -1,6 +1,6 @@
 import { AccountId, Client, Provider, TransactionId, TransactionResponse } from '@hashgraph/sdk';
 import Executable from '@hashgraph/sdk/lib/Executable';
-import { HashConnect } from '@nuxt/hashconnect/dist/runtime/main';
+import { HashConnect } from '../main';
 export declare class HashConnectProvider implements Provider {
     client: Client;
     private hashconnect;

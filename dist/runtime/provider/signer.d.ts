@@ -1,6 +1,6 @@
-import { LedgerId, AccountId, SignerSignature, AccountBalance, AccountInfo, TransactionRecord, Executable } from "@hashgraph/sdk";
+import { LedgerId, AccountId, SignerSignature, Executable } from "@hashgraph/sdk";
 import { Signer, Transaction } from "@hashgraph/sdk/lib/Signer";
-import { HashConnect } from "@nuxt/hashconnect/dist/runtime/main";
+import { HashConnect } from "../main";
 import { HashConnectProvider } from "./provider";
 export declare class HashConnectSigner implements Signer {
     private hashconnect;
@@ -15,9 +15,9 @@ export declare class HashConnectSigner implements Signer {
     };
     getMirrorNetwork(): never[];
     sign(messages: Uint8Array[]): Promise<SignerSignature[]>;
-    getAccountBalance(): Promise<AccountBalance>;
-    getAccountInfo(): Promise<AccountInfo>;
-    getAccountRecords(): Promise<TransactionRecord[]>;
+    getAccountBalance(): Promise<import("@hashgraph/sdk").AccountBalance>;
+    getAccountInfo(): Promise<import("@hashgraph/sdk").AccountInfo>;
+    getAccountRecords(): Promise<import("@hashgraph/sdk").TransactionRecord[]>;
     signTransaction<T extends Transaction>(transaction: T): Promise<T>;
     checkTransaction<T extends Transaction>(transaction: T): Promise<T>;
     populateTransaction<T extends Transaction>(transaction: T): Promise<T>;

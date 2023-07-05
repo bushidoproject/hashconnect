@@ -1,58 +1,22 @@
 export class RelayMessage {
-    constructor(timestamp, type, data, topic) {
-        this.timestamp = timestamp;
-        this.type = type;
-        this.data = data;
-        this.topic = topic;
-    }
+  constructor(timestamp, type, data, topic) {
+    this.timestamp = timestamp;
+    this.type = type;
+    this.data = data;
+    this.topic = topic;
+  }
 }
-export var RelayMessageType;
-(function (RelayMessageType) {
-    RelayMessageType["Transaction"] = "Transaction";
-    RelayMessageType["TransactionResponse"] = "TransactionResponse";
-    RelayMessageType["ApprovePairing"] = "ApprovePairing";
-    RelayMessageType["RejectPairing"] = "RejectPairing";
-    RelayMessageType["Acknowledge"] = "Acknowledge";
-    RelayMessageType["AdditionalAccountRequest"] = "AdditionalAccountRequest";
-    RelayMessageType["AdditionalAccountResponse"] = "AdditionalAccountResponse";
-    RelayMessageType["AuthenticationRequest"] = "AuthenticationRequest";
-    RelayMessageType["AuthenticationResponse"] = "AuthenticationResponse";
-    RelayMessageType["SigningRequest"] = "SigningRequest";
-    RelayMessageType["SigningResponse"] = "SigningResponse";
-})(RelayMessageType || (RelayMessageType = {}));
-// export enum TransactionType {
-//     contractCall="contractCall",
-//     contractCreateInstance="contractCreateInstance",
-//     contractUpdateInstance="contractUpdateInstance",
-//     contractDeleteInstance="contractDeleteInstance",
-//     cryptoCreateAccount="cryptoCreateAccount",
-//     cryptoDelete="cryptoDelete",
-//     cryptoTransfer="cryptoTransfer",
-//     cryptoUpdateAccount="cryptoUpdateAccount",
-//     fileAppend="fileAppend",
-//     fileCreate="fileCreate",
-//     fileDelete="fileDelete",
-//     fileUpdate="fileUpdate",
-//     systemDelete="systemDelete",
-//     systemUndelete="systemUndelete",
-//     freeze="freeze",
-//     consensusCreateTopic="consensusCreateTopic",
-//     consensusUpdateTopic="consensusUpdateTopic",
-//     consensusDeleteTopic="consensusDeleteTopic",
-//     consensusSubmitMessage="consensusSubmitMessage",
-//     tokenCreation="tokenCreation",
-//     tokenFreeze="tokenFreeze",
-//     tokenUnfreeze="tokenUnfreeze",
-//     tokenGrantKyc="tokenGrantKyc",
-//     tokenRevokeKyc="tokenRevokeKyc",
-//     tokenDeletion="tokenDeletion",
-//     tokenUpdate="tokenUpdate",
-//     tokenMint="tokenMint",
-//     tokenBurn="tokenBurn",
-//     tokenWipe="tokenWipe",
-//     tokenAssociate="tokenAssociate",
-//     tokenDissociate="tokenDissociate",
-//     token_pause="token_pause",
-//     token_unpause="token_unpause",
-//     scheduleDelete="scheduleDelete",
-// }
+export var RelayMessageType = /* @__PURE__ */ ((RelayMessageType2) => {
+  RelayMessageType2["Transaction"] = "Transaction";
+  RelayMessageType2["TransactionResponse"] = "TransactionResponse";
+  RelayMessageType2["ApprovePairing"] = "ApprovePairing";
+  RelayMessageType2["RejectPairing"] = "RejectPairing";
+  RelayMessageType2["Acknowledge"] = "Acknowledge";
+  RelayMessageType2["AdditionalAccountRequest"] = "AdditionalAccountRequest";
+  RelayMessageType2["AdditionalAccountResponse"] = "AdditionalAccountResponse";
+  RelayMessageType2["AuthenticationRequest"] = "AuthenticationRequest";
+  RelayMessageType2["AuthenticationResponse"] = "AuthenticationResponse";
+  RelayMessageType2["SigningRequest"] = "SigningRequest";
+  RelayMessageType2["SigningResponse"] = "SigningResponse";
+  return RelayMessageType2;
+})(RelayMessageType || {});

@@ -1,5 +1,5 @@
 import { Event } from "ts-typed-events";
-import { HashConnect } from "@nuxt/hashconnect/dist/runtime/main";
+import { HashConnect } from "../main";
 /**
  * Relay interface
  */

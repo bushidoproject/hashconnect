@@ -1,8 +1,8 @@
-import { addImports, createResolver, defineNuxtModule } from 'nuxt/kit'
+import { defineNuxtModule, createResolver, addImports } from '@nuxt/kit';
 
 const module = defineNuxtModule({
   meta: {
-    name: "@nuxt/hashconnect",
+    name: "@bushidoproject/hashconnect",
     configKey: "hashconnect",
     compatibility: {
       nuxt: "^3.0.0"
@@ -10,13 +10,12 @@ const module = defineNuxtModule({
   },
   defaults: {},
   setup() {
-    const { resolve } = createResolver(import.meta.url)
-
+    const resolver = createResolver(import.meta.url);
     addImports({
       name: "HashConnect",
-      from: resolve("runtime/hashconnect")
-    })
+      from: resolver.resolve("./runtime/hashconnect")
+    });
   }
-})
+});
 
-export { module as default }
+export { module as default };

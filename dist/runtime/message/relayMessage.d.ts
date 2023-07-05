@@ -1,4 +1,4 @@
-import { HashConnectTypes } from "@nuxt/hashconnect/dist/runtime/main";
+import { HashConnectTypes } from "../main";
 export declare class RelayMessage {
     timestamp: number;
     type: RelayMessageType;

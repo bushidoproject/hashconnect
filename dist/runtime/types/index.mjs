@@ -1,1 +1,1 @@
-export * from "./hashconnect";
+export * from "./hashconnect.mjs";

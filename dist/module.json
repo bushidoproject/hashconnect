@@ -1,8 +1,8 @@
 {
-  "name": "@nuxt/hashconnect",
+  "name": "@bushidoproject/hashconnect",
   "configKey": "hashconnect",
   "compatibility": {
     "nuxt": "^3.0.0"
   },
-  "version": "0.2.4"
+  "version": "0.0.1"
 }

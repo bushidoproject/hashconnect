@@ -1,4 +1,4 @@
-import { HashConnect } from '@nuxt/hashconnect/dist/runtime/main';
+import { HashConnect } from '../main';
 import { RelayMessage, RelayMessageType } from './';
 import { MessageTypes } from './relayMessage';
 export declare class MessageUtil {
