@@ -17,15 +17,8 @@ Find and replace all on all files (CMD+SHIFT+F):
 Hashconnect is a library to connect Hedera apps to wallets, similar to web3 functionality found in the Ethereum ecosystem.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-- [📖 Hedera API's and SDK's](https://docs.hedera.com/guides/docs/hedera-api)
+- [📖 &nbsp;Hedera API's and SDK's](https://docs.hedera.com/guides/docs/hedera-api)
 - [📖 &nbsp;Hashconnect](https://github.com/Hashpack/hashconnect)
-
-## Features
-
-<!-- Highlight some of the features your module provide here -->
-<!-- - ⛰ &nbsp;Foo -->
-<!-- - 🚠 &nbsp;Bar -->
-<!-- - 🌲 &nbsp;Baz -->
 
 ## Quick Setup
 
